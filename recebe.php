@@ -24,9 +24,11 @@
 // Filtrando o menor salário das mulheres chinesas.
   $menorSalario = array();
   foreach ($mulheres as $value) {
-    if ($value->salario == min($salariosMulheresChinesas))
-      array_push($menorSalario, $value);
+    if ($value->salario == min($salariosMulheresChinesas)) {
+        array_push($menorSalario, $value);
+    }
   }
+
 // Retornando os dados para o ajax.
   $retorno = json_encode($menorSalario);
   print $retorno;
