@@ -23,7 +23,7 @@ $(document).ready(function () {
 				},
 				type: 'post',
 				success: function (data, textStatus, jqxhr) {
-					data.forEach((x, i) =>console.log(`${i + 1}. Nome: ${x.nome}, salario: ${x.salario}`));
+					data.forEach((x, i) => console.log(`${i + 1}. Nome: ${x.nome}, salario: ${x.salario}`));
 				},
 				error: function (jqxhr, textStatus, error) {
 					console.log(error);
